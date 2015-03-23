@@ -6,6 +6,9 @@ public class Camera {
 	
 	private float offsetX = 0f;
 	
+	/**
+	 * @return the x-coord of the camera. Rounded, this will be the first block visible.
+	 */
 	public float firstVisible() {
 		return offsetX;
 	}
