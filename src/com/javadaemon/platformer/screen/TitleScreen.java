@@ -3,7 +3,7 @@ package com.javadaemon.platformer.screen;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.javadaemon.platformer.PlatformerGame;
 
-public class TitleScreen extends GameScreen {
+public class TitleScreen extends AbstractScreen {
 	
 	private TextureRegion button;
 

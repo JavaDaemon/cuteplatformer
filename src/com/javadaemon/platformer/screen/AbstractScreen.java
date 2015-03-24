@@ -3,11 +3,11 @@ package com.javadaemon.platformer.screen;
 import com.badlogic.gdx.Screen;
 import com.javadaemon.platformer.PlatformerGame;
 
-public abstract class GameScreen implements Screen {
+public abstract class AbstractScreen implements Screen {
 	
 	private PlatformerGame app;
 	
-	public GameScreen(PlatformerGame app) {
+	public AbstractScreen(PlatformerGame app) {
 		this.app = app;
 	}
 	
