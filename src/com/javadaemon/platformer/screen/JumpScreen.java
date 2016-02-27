@@ -96,15 +96,11 @@ public class JumpScreen extends AbstractScreen {
 		for (Actor a : world.getActors()) {
 			batch.draw(
 					a.getTexture(), 
-					a.getPosition().x*Settings.PIXELS_PER_BLOCK_SCALED-(int)(camera.getOffset()*Settings.PIXELS_PER_BLOCK_SCALED), 
-					a.getPosition().y*Settings.PIXELS_PER_BLOCK_SCALED, 
+					a.getBounds().x*Settings.PIXELS_PER_BLOCK_SCALED-(int)(camera.getOffset()*Settings.PIXELS_PER_BLOCK_SCALED), 
+					a.getBounds().y*Settings.PIXELS_PER_BLOCK_SCALED, 
 					Settings.PIXELS_PLAYER_WIDTH_SCALED, 
 					Settings.PIXELS_PLAYER_HEIGHT_SCALED);
 		}
-		
-		Vector2 position = actor.getPosition();
-		font.draw(batch, "position.x: "+position.x, 10, 40);
-		font.draw(batch, "position.y: "+position.y, 10, 20);
 		
 		batch.end();
 	}

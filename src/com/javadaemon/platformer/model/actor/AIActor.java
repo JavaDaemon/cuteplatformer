@@ -44,4 +44,9 @@ public class AIActor extends Actor {
 		
 		super.update(delta);
 	}
+
+	@Override
+	public void collides(Actor actor) {
+		
+	}
 }

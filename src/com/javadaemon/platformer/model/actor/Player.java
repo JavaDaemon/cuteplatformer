@@ -10,4 +10,9 @@ public class Player extends Actor {
 		super(x, y, world, assetManager, soundService);
 	}
 
+	@Override
+	public void collides(Actor actor) {
+		
+	}
+
 }

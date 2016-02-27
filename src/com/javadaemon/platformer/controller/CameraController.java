@@ -18,12 +18,12 @@ public class CameraController {
 	}
 	
 	public void update(float delta) {
-		float actorRelative = actor.getPosition().x - camera.firstVisible();
+		float actorRelative = actor.getBounds().x - camera.firstVisible();
 		float actorScreenRelative = actorRelative/Settings.SCREEN_WIDTH;
 		
 		/*
 		 * NOTE: Følgende tager en procent (actorScreenRelative), og behandler den som et mål i blocks.
-		 * Det viser sig at dette giver super flot cameraføring, som er uafhængig af hastighed.
+		 * Det viser sig at dette giver super flot kameraføring, som er uafhængig af hastighed.
 		 * Vi beholder det! 
 		 */
 		if (actorScreenRelative > 0.60f) {
